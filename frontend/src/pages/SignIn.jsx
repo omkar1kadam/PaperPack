@@ -32,9 +32,9 @@ const SignIn = () => {
         localStorage.setItem("token", data.token);
       }
 
-      alert("Login successful!");
+      // alert("Login successful!");
       // ✅ Redirect to dashboard or homepage
-      window.location.href = "/home";
+      window.location.href = "/dashboard";
     } catch (err) {
       setError(err.message);
     } finally {
